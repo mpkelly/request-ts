@@ -6,7 +6,7 @@ If you only need call one or two REST endpoints then a smaller client like this 
 This project is not in NPM but can be added to a NPM-based project like so: 
 
 ```
-npm install react-style-helpers:https://github.com/mpkelly/request-ts.git
+npm install request-ts:https://github.com/mpkelly/request-ts.git
 
 ```
 
@@ -15,7 +15,7 @@ or by adding the following to your package.json "dependencies" section
 ``` 
 "dependencies" {
   ...
-  "react-style-helpers": "git+https://github.com/mpkelly/react-style-helpers.git"
+  "request-ts": "git+https://github.com/mpkelly/request-ts.git"
 }
 ```
 
