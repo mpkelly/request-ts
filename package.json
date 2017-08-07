@@ -1,0 +1,22 @@
+{
+  "name": "request-ts",
+  "version": "0.0.1",
+  "description": "A lightweight, typesafe, promise-based web API client.",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.2",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.4.2",
+    "webpack": "^3.4.1"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpkelly/request-ts.git"
+  },
+  "author": "mpkelly",
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es2017"
+  },
+  "include": [
+    "./src/Index.ts"
+  ]
+}
