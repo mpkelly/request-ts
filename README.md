@@ -46,4 +46,15 @@ export const query = <Response>(param1: string, param2: string): Promise<Respons
   };
   return makeRequest<Response>({url, method, params});
 };
+
+// Use it 
+
+query(...)
+.then((response: Response) => {
+  // handle response
+})
+.catch((error: any)=> {
+  // handle error
+});
+
 ```
