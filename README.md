@@ -27,7 +27,7 @@ npm install
 
 You can use the library like so 
 
-```
+```Typescript
 
 import { makeRequest } from "request-ts";
 
@@ -41,8 +41,8 @@ class Respone {
 export const query = <Response>(param1: string, param2: string): Promise<Response> => {  
   const method = "get";
   const params = {
-    param1: param1,
-    param2: param2,
+    param1,
+    param2,
   };
   return makeRequest<Response>({url, method, params});
 };
