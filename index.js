@@ -112,7 +112,7 @@ exports.makeRequest = (opts) => {
                 xhr.setRequestHeader(key, opts.headers[key]);
             });
         }
-        xhr.send();
+        xhr.send(opts.body);
     });
 };
 

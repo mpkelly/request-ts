@@ -2,7 +2,8 @@ export interface RequestOptions {
   method?: string,
   url: string,
   params?: string | any,
-  headers?: any
+  headers?: any;
+  body?:any;
 }
 
 export const makeRequest = <T extends {}>(opts: RequestOptions): Promise<T> => {
@@ -39,6 +40,6 @@ export const makeRequest = <T extends {}>(opts: RequestOptions): Promise<T> => {
         xhr.setRequestHeader(key, opts.headers[key]);
       });
     }
-    xhr.send();
+    xhr.send(opts.body);
   });
 };
