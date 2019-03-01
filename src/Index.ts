@@ -17,7 +17,7 @@ export const makeRequest = <T extends {}>(opts: RequestOptions): Promise<T> => {
       }).join('&');
     }
 
-    xhr.open(opts.method || "get", opts.url + params);
+    xhr.open(opts.method || "get", opts.url + (params || "") );
 
     xhr.onload =  ()=> {
       if (xhr.status >= 200 && xhr.status < 300) {

@@ -89,7 +89,7 @@ exports.makeRequest = (opts) => {
                 return encodeURIComponent(key) + '=' + encodeURIComponent(params[key]);
             }).join('&');
         }
-        xhr.open(opts.method || "get", opts.url + params);
+        xhr.open(opts.method || "get", opts.url + (params || ""));
         xhr.onload = () => {
             if (xhr.status >= 200 && xhr.status < 300) {
                 resolve(JSON.parse(xhr.response));
