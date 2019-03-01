@@ -21,7 +21,7 @@ export const makeRequest = <T extends {}>(opts: RequestOptions): Promise<T> => {
 
     xhr.onload =  ()=> {
       if (xhr.status >= 200 && xhr.status < 300) {
-        resolve(JSON.parse(xhr.response));
+        resolve(xhr.response);
       } else {
         reject({
           status: xhr.status,

@@ -92,7 +92,7 @@ exports.makeRequest = (opts) => {
         xhr.open(opts.method || "get", opts.url + (params || ""));
         xhr.onload = () => {
             if (xhr.status >= 200 && xhr.status < 300) {
-                resolve(JSON.parse(xhr.response));
+                resolve(xhr.response);
             }
             else {
                 reject({
