@@ -1,3 +1,5 @@
+**DEPRECATED** use Fetch API
+
 ## Basic Web API client 
 
 If you only need to call one or two REST endpoints then a smaller client like this one helps keep your build size down. It ships with typescript declarations and is promise based. If you need something more sophisticated then try [superagent](https://github.com/visionmedia/superagent).
